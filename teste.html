@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparação de Preços do iPhone 13, Salários Mínimos e Sistemas de Saúde</title>
+    <meta name="description" content="Comparação detalhada entre preços do iPhone 13, salários mínimos e sistemas de saúde de diversos países.">
+    <meta name="keywords" content="iPhone 13, preços, salários mínimos, sistemas de saúde, comparação internacional">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        header {
+            background-color: #2c2c2c;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2c2c2c;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #333333;
+        }
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #444444;
+            text-align: center;
+        }
+        table th {
+            background-color: #404040;
+            color: #ffffff;
+        }
+        table tr:nth-child(even) {
+            background-color: #383838;
+        }
+        table tr:hover {
+            background-color: #454545;
+        }
+        h2 {
+            text-align: center;
+            color: #ffffff;
+        }
+        .chart-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        /* Media queries for responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+            table th, table td {
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Comparação de Preços do iPhone 13, Salários Mínimos e Sistemas de Saúde</h1>
+</header>
+
+<div class="container">
+    <h2>Como se vive em diferentes países?</h2>
+    
+    <!-- Primeira tabela: Dinheiro e Trabalho -->
+    <h3>💰 Dinheiro e Trabalho</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>País</th>
+                <th>Salário Mínimo (USD)</th>
+                <th>Preço do iPhone 13 (USD)</th>
+                <th>Meses de Trabalho para Comprar</th>
+                <th>Aluguel Médio (USD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Brasil</td>
+                <td>$260</td>
+                <td>$1,250</td>
+                <td>4.8 meses</td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+                <td>$760</td>
+                <td>$960</td>
+                <td>1.3 meses</td>
+                <td>$800</td>
+            </tr>
+            <tr>
+                <td>Canadá</td>
+                <td>$1,400</td>
+                <td>$850</td>
+                <td>0.6 meses</td>
+                <td>$1,200</td>
+            </tr>
+            <tr>
+                <td>Austrália</td>
+                <td>$1,640</td>
+                <td>$900</td>
+                <td>0.5 meses</td>
+                <td>$1,400</td>
+            </tr>
+            <tr>
+                <td>Japão</td>
+                <td>$1,360</td>
+                <td>$960</td>
+                <td>0.7 meses</td>
+                <td>$1,100</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Segunda tabela: Saúde e Educação -->
+    <h3>🏥 Saúde e Educação</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>País</th>
+                <th>Como funciona a Saúde?</th>
+                <th>Tempo de espera hospital</th>
+                <th>Faculdade é paga?</th>
+                <th>Nota da Educação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Brasil</td>
+                <td>Gratuita (SUS)</td>
+                <td>3-4 horas</td>
+                <td>Pública gratuita / Particular paga</td>
+                <td>6/10</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+                <td>Gratuita para todos</td>
+                <td>1-2 horas</td>
+                <td>Paga (valor baixo)</td>
+                <td>8/10</td>
+            </tr>
+            <tr>
+                <td>Canadá</td>
+                <td>Gratuita para todos</td>
+                <td>1-2 horas</td>
+                <td>Paga (governo ajuda)</td>
+                <td>9/10</td>
+            </tr>
+            <tr>
+                <td>Austrália</td>
+                <td>Gratuita para todos</td>
+                <td>1 hora</td>
+                <td>Paga (pode parcelar)</td>
+                <td>9/10</td>
+            </tr>
+            <tr>
+                <td>Japão</td>
+                <td>70% governo paga</td>
+                <td>30 minutos</td>
+                <td>Paga (preço médio)</td>
+                <td>9/10</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Terceira tabela: Qualidade de Vida -->
+    <h3>🌟 Como é a vida?</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>País</th>
+                <th>Internet (Velocidade)</th>
+                <th>Transporte Público</th>
+                <th>Segurança</th>
+                <th>Pessoas vivem até (média)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Brasil</td>
+                <td>50 Mb/s</td>
+                <td>Regular</td>
+                <td>Precisa melhorar</td>
+                <td>76 anos</td>
+            </tr>
+            <tr>
+                <td>Portugal</td>
+                <td>100 Mb/s</td>
+                <td>Muito bom</td>
+                <td>Muito seguro</td>
+                <td>81 anos</td>
+            </tr>
+            <tr>
+                <td>Canadá</td>
+                <td>120 Mb/s</td>
+                <td>Excelente</td>
+                <td>Muito seguro</td>
+                <td>82 anos</td>
+            </tr>
+            <tr>
+                <td>Austrália</td>
+                <td>100 Mb/s</td>
+                <td>Muito bom</td>
+                <td>Muito seguro</td>
+                <td>83 anos</td>
+            </tr>
+            <tr>
+                <td>Japão</td>
+                <td>150 Mb/s</td>
+                <td>Excelente</td>
+                <td>Extremamente seguro</td>
+                <td>84 anos</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="chart-container">
+        <canvas id="salarioVsIphone"></canvas>
+    </div>
+    
+    <div class="chart-container">
+        <canvas id="qualidadeVida"></canvas>
+    </div>
+</div>
+
+<script>
+// Gráfico de Salário vs iPhone
+const ctx = document.getElementById('salarioVsIphone').getContext('2d');
+const chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Brasil', 'Portugal', 'Canadá', 'Austrália', 'Japão'],
+        datasets: [{
+            label: 'Salário Mínimo (R$)',
+            data: [1302, 3800, 7000, 8200, 6800],
+            backgroundColor: 'rgba(75, 192, 192, 0.7)'
+        }, {
+            label: 'Preço iPhone 13 (R$)',
+            data: [6290, 4800, 4230, 4500, 4800],
+            backgroundColor: 'rgba(255, 99, 132, 0.7)'
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Salário vs Preço do iPhone',
+                color: '#ffffff'
+            },
+            legend: {
+                labels: {
+                    color: '#ffffff'
+                }
+            }
+        },
+        scales: {
+            y: {
+                grid: {
+                    color: 'rgba(255, 255, 255, 0.1)'
+                },
+                ticks: {
+                    color: '#ffffff'
+                }
+            },
+            x: {
+                grid: {
+                    color: 'rgba(255, 255, 255, 0.1)'
+                },
+                ticks: {
+                    color: '#ffffff'
+                }
+            }
+        }
+    }
+});
+
+// Gráfico de Qualidade de Vida
+const ctxQuality = document.getElementById('qualidadeVida').getContext('2d');
+const qualityChart = new Chart(ctxQuality, {
+    type: 'radar',
+    data: {
+        labels: ['Saúde', 'Educação', 'Segurança', 'Transporte', 'Salário'],
+        datasets: [{
+            label: 'Brasil',
+            data: [6, 6, 5, 6, 5],
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            pointBackgroundColor: 'rgba(255, 99, 132, 1)'
+        }, {
+            label: 'Canadá',
+            data: [9, 9, 9, 9, 8],
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            pointBackgroundColor: 'rgba(75, 192, 192, 1)'
+        }, {
+            label: 'Japão',
+            data: [9, 9, 10, 10, 8],
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            pointBackgroundColor: 'rgba(54, 162, 235, 1)'
+        }]
+    },
+    options: {
+        plugins: {
+            title: {
+                display: true,
+                text: 'Comparação da Qualidade de Vida',
+                color: '#ffffff'
+            },
+            legend: {
+                labels: {
+                    color: '#ffffff'
+                }
+            }
+        },
+        scales: {
+            r: {
+                grid: {
+                    color: 'rgba(255, 255, 255, 0.1)'
+                },
+                pointLabels: {
+                    color: '#ffffff'
+                }
+            }
+        }
+    }
+});
+</script>
+
+</body>
+</html>
+ 
